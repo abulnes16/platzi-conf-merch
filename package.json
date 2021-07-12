@@ -33,10 +33,16 @@
     "eslint-plugin-react": "^7.24.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.1",
     "mini-css-extract-plugin": "^2.1.0",
     "prettier": "^2.3.2",
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test && yarn run eslint"
+    }
   }
 }
