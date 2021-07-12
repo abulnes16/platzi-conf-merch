@@ -1,7 +1,10 @@
-import React from "react";
+import React from 'react';
+import './styles/components/app.css';
 
-const App = () => {
-  return <div>Hello World</div>;
-};
+const App = () => (
+  <div>
+    <h1>Hello World</h1>
+  </div>
+);
 
 export default App;
