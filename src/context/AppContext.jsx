@@ -4,11 +4,9 @@ import useInitialState from '../hooks/useInitialState';
 export const AppContext = createContext({});
 
 const AppProvider = ({ children }) => {
-  const { state, removeFromCart, addToCart, addToBuyer } = useInitialState();
+  const initialState = useInitialState();
   return (
-    <AppContext.Provider
-      value={{ state, removeFromCart, addToCart, addToBuyer }}
-    >
+    <AppContext.Provider value={{ ...initialState }}>
       {children}
     </AppContext.Provider>
   );
